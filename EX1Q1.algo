@@ -1,0 +1,15 @@
+Algorithme PermuationCirculaire
+Variables a, b, c, temp : entiers
+Debut
+  ecrire("Donner la valeur de a : ")
+  lire(a)
+  ecrire("Donner la valeur de b : ")
+  lire(b)
+  ecrire("Donner la valeur de c : ")
+  lire(c)
+  temp <- b
+  b <- a
+  a <- c
+  c <- temp
+  ecrire(a, b, c)
+Fin
