@@ -1,0 +1,28 @@
+Algorithme UneMinutePlusTards
+Variables
+	heure, minute : entiers
+Début
+	// Saisie de l'heure et des minutes
+	ecrire("Entrez l'heure : ")
+	lire(heure)
+	ecrire("Entrez les minutes : ")
+	lire(minute)
+	
+	Si minute < 0 ou minute > 59 ou heure < 0 ou heure > 23 alors
+		// Affichage d'un message qui indique que l'heure ou les minutes sont incorrectes
+		ecrire("l'heure est entre 0 et 23, les minutes sont entre 0 et 59")
+	Sinon
+		// Incrémentation des minutes
+		minute <- minute + 1
+		Si minute = 60 alors
+			minute <- 0
+			heure <- heure + 1
+			Si heure = 24 alors
+				heure <- 0
+			FinSi
+		FinSi
+	FinSi
+	
+	// Affichage de l'heure et des minutes
+	ecrire("Dans une minute, il sera ", heure, "h ", minute)
+Fin
