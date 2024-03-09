@@ -21,8 +21,9 @@ Début
 				heure <- 0
 			FinSi
 		FinSi
+		// Affichage de l'heure et des minutes
+		ecrire("Dans une minute, il sera ", heure, "h ", minute)
 	FinSi
 	
-	// Affichage de l'heure et des minutes
-	ecrire("Dans une minute, il sera ", heure, "h ", minute)
+	
 Fin
