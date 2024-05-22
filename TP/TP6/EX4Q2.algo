@@ -1,0 +1,31 @@
+fonction fusionner(T1[]: reels, n:entier, T2[]: reels, m:entier):^ reels 
+	variables	i, j, k, l: entier
+				T3: ^ reels
+	Début
+	allouer(T3,n+m)
+	i <--- 0 // i pour parcourir T3 
+	j <--- 0 // pour parcourir T1 
+	k <--- 0 // k pour parcourir T2
+	Tant que (j<n ET k<m) faire 
+		si (T1[i]<=T2[k]) alors
+			T3[i] <--- T1[j]
+			j <--- j+1
+		sinon
+			T3[i] <--- T2[k]
+			k <--- k+1
+		Fin si
+		i <---i+1
+	Fin Tant que
+	si (j<n) alors
+		pour l de j a n-1 faire 
+			T3[i] <---T1[l]
+			i <--- i+1
+		Fin pour
+	sinon
+		pour l de k a m-1 faire 
+			T3[i] <--- T2[l]
+			i <--- i+1
+		Fin pour
+	Fin si
+	return T3
+	

@@ -1,0 +1,13 @@
+fonction fusionner(T1[]: reels, n:entier, T2[]: reels, m:entier):^ reels 
+	variables 	i : entier
+				R: ^ reels
+	Début
+		allouer(T3,n+m)
+		Pour i de 0 à n-1 faire
+			T3[i] <--- T1[i]
+		Fin pour
+		Pour i de n à n+m-1 faire
+			T3[i] <--- T2[i-n]
+		Fin pour
+	return T3
+	Fin
