@@ -28,4 +28,3 @@ fonction fusionner(T1[]: reels, n:entier, T2[]: reels, m:entier):^ reels
 		Fin pour
 	Fin si
 	return T3
-	
